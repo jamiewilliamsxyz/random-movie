@@ -1,0 +1,44 @@
+export const filters = {
+  all: {
+    name: "All",
+    url: "https://api.themoviedb.org/3/discover/movie",
+    pages: "500",
+  },
+  popular: {
+    name: "Popular",
+    url: "https://api.themoviedb.org/3/movie/popular",
+    pages: "500",
+  },
+  top100: {
+    name: "Top 100",
+    url: "https://api.themoviedb.org/3/movie/top_rated",
+    pages: "5",
+  },
+  inTheatres: {
+    name: "In Theatres",
+    url: "https://api.themoviedb.org/3/movie/now_playing",
+    pages: "100",
+  },
+};
+
+export const genres = {
+  28: "Action",
+  12: "Adventure",
+  16: "Animation",
+  35: "Comedy",
+  80: "Crime",
+  99: "Documentary",
+  18: "Drama",
+  10751: "Family",
+  14: "Fantasy",
+  36: "History",
+  27: "Horror",
+  10402: "Music",
+  9648: "Mystery",
+  10749: "Romance",
+  878: "Science Fiction",
+  10770: "TV Movie",
+  53: "Thriller",
+  10752: "War",
+  37: "Western",
+};
