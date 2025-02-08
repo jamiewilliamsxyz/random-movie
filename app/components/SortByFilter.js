@@ -1,10 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { filters } from "../data";
 
 export default function SortByFilter({ onFilterChange, selectedFilter }) {
+  const [filterSelected, setFilterSelected] = useState("");
+
   const optionSelect = (e) => {
     const selectedValue = e.target.value;
+    setFilterSelected(selectedValue);
     const selectedFilter = Object.values(filters).find(
       (filter) => filter.name === selectedValue
     );
@@ -16,7 +20,7 @@ export default function SortByFilter({ onFilterChange, selectedFilter }) {
       <select
         name="Sort By"
         className="w-28 self-center p-1 rounded-lg"
-        value={selectedFilter.name}
+        value={filterSelected}
         onChange={optionSelect}
       >
         {Object.values(filters).map((filter) => (
