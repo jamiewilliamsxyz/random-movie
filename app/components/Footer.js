@@ -8,7 +8,7 @@ export default function Footer() {
       <p>
         Project made by{" "}
         <Link
-          href="https://www.google.com"
+          href="https://github.com/jamiewilliamsxyz"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-purple-400"

@@ -59,6 +59,7 @@ export default function Home() {
 
   const handleGenreChange = (genreId) => {
     setSelectedGenre(genreId);
+    setSelectedFilter(filters.all);
   };
 
   return (
